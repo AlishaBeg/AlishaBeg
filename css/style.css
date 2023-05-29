@@ -1,0 +1,311 @@
+/*
+-	Protfolio "AlishaBeg"
+-	Designed by Alisha Beg
+-	All Righst Reserved Alisha Beg
+-	Developed by AlishaBeg and MayankDevil
+-   css/style.css
+*/
+:root
+{
+    --primary:#0d6efd;
+    --secondary:#6c757d;
+    --third:#004085;
+    --dark:#212529;
+    --white:#fff;
+    --light:#f8f9fa;
+    --gray:#343a40;
+}
+.dark
+{
+    --primary:#0d6efd;
+    --secondary:#6c757d;
+    --third:#cce5ff;
+    --secondary:#ced4da;
+    --white:#212529;
+    --dark:#fff;
+    --gray:#f8f9fa;
+    --light:#343a40;
+}
+::-webkit-scrollbar
+{
+    width:0.5rem;
+    background: var(--white);
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background: var(--gray);
+}
+/*
+    ------------------
+    | BOOTSTRAP ICON |
+    ------------------
+*/
+@import url("bootstrap-icons.css");
+/*
+    bi class style
+*/
+.bi {
+    margin:0;
+    font-size: 1rem;
+}
+span[class="bi"]
+{
+    margin: 0;
+    padding: 0;
+}
+/*
+    ICON CSS
+*/
+body
+{
+    scroll-behavior: smooth;
+}
+.btn-primary
+{
+    background:var(--primary);
+}
+/*
+    header section =============================
+*/
+#header,.bg
+{
+	z-index:10;
+    background: var(--light);
+}
+#brand
+{
+    color:var(--dark) !important;
+}
+/* navbar nav */
+.nav-item
+{
+    padding: 0 0.5rem;
+    /* border: 1px solid var(--dark); */
+}
+.nav-item:hover .nav-link
+{
+    color: var(--primary) !important;
+}
+.nav-link
+{
+    color:var(--gray);
+}
+.nav-link .bi
+{
+    margin: 0.1rem;
+    font-size:1.2rem !important;
+    color:var(--secondary);
+}
+.nav-item:hover .nav-link .bi
+{
+    color:var(--dark) !important;
+}
+#nav-toggle
+{
+    font-size: 2rem;
+    color:var(--dark);
+}
+#nav-toggle:hover
+{
+    color:var(--primary);
+}
+/* theme button */
+#theme-btn:hover .nav-link .bi
+{
+    color:var(--primary) !important;
+}
+/*
+    home section ==============================
+*/
+#home
+{
+    background: var(--light);
+}
+.h4
+{
+    color:var(--gray);
+}
+#heading
+{
+    color:var(--dark) !important;
+}
+/* home image */
+img[alt='whoami']
+{
+	z-index:0;
+}
+/* home button */
+#pro-btn
+{
+    padding: 0.5rem 1rem;
+    animation: zooming 1s linear infinite alternate-reverse;
+}
+#pro-btn:hover
+{
+    animation: none;
+}
+#pro-btn .bi
+{
+    margin:0.1rem;
+    font-size: 1.2rem;
+}
+/*
+    about section =================================
+*/
+#about
+{
+    background: var(--white);
+}
+.h2
+{
+    color:var(--dark) !important;
+}
+.h2 .bi
+{
+    font-size: 2rem;
+    color:var(--primary);
+}
+.p
+{
+    color:var(--secondary)
+}
+.lead
+{
+    line-height: 2.5rem;
+    color:var(--secondary) !important;
+}
+/* detail inforation style */
+#detail li
+{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1rem;
+    color:var(--dark);
+    border-left: 2px solid var(--dark);
+}
+#detail li::before
+{
+    content:"";
+    margin: 0 2rem 0 -1.5rem;
+    padding: 0 5px;
+    background-color: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+}
+#detail li div:first-child
+{
+    position: absolute;
+    left:4rem;
+}
+#detail li div:last-child
+{
+    color:var(--third);
+    padding-right: 1rem;
+}
+/*
+    service section =================================
+*/
+#service
+{
+    background: var(--white);
+}
+.h3
+{
+    color:var(--gray) !important;
+}
+.h3 .bi
+{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    color:var(--secondary);
+}
+#service li
+{
+    margin-left: -1.5rem;
+    padding:0.2rem 0;
+    list-style: none;
+    color:var(--secondary);
+}
+#service li .bi
+{
+    padding-right: 0.5rem;
+    color:var(--dark);    
+}
+/*
+    contact section =================================
+*/
+#contact
+{
+    background: var(--white);
+}
+.form-control::placeholder,
+.form-control,
+.form-control:focus,
+.form-select,
+.form-select:focus
+{
+    color:var(--gray);
+    background: var(--white);
+}
+#connect a .bi
+{
+    padding: 0 0.5rem;
+    font-size: 1.5rem;
+    color:var(--primary);
+}
+/* social media */
+#media .bi
+{
+    margin:1rem;
+    padding: 0.1rem 0.3rem;
+    font-size: 1.5rem;
+    color:var(--dark) !important;
+    border-radius: 5px;
+}
+#media .bi:hover
+{
+    color: var(--white) !important;
+    background: var(--primary);
+    border-color: var(--primary);
+}
+/*
+    footer section =================================
+*/
+#footer
+{
+    background: var(--white);
+}
+.h6
+{
+    color:var(--dark);
+}
+#bottom a
+{
+    color:var(--third);
+}
+@keyframes zooming
+{
+    from {
+        transform: scale(0.9);
+    } to {
+        transform: scale(1);
+    } 
+}
+
+@media screen and (max-width:576px)
+{
+    .display-2
+    {
+        font-size: 4rem;
+    }
+    /* toggler */
+    .navbar-toggler span
+    {
+        color:var(--dark) !important;
+    }
+}
+/*
+	THE END ===
+*/
