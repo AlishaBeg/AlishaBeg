@@ -11,9 +11,8 @@
 
 - 💬 Ask me about **Programming**
 
-- 📫 How to reach me **alishahell742@gmail.com**
-
-<h3 align="left">Connect with me:</h3>
+- 📫 How to reach me **https://alishabeg.github.io/AlishaBeg/**
+- 
 <p align="left">
 </p>
 
