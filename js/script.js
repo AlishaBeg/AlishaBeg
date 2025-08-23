@@ -53,10 +53,10 @@ $(document).ready(function () {
 
     function cardLayout (data) {
         return `
-            <div class="card border border-lime-500 hover:border-lime-600 p-3">
+            <div class="card relative border border-lime-500 hover:border-lime-600 p-3">
                 <h3 class="title text-gray-400 text-lg"> <span class="bi bi-folder"></span> ${data.name} </h3>
-                <p class="description py-3"> ${data.description} </p>
-                <button data-url='${data.url}' class="more_btn abaolute bottom-0 inline-block bg-gray-500 hover:bg-transparent text-gray-900 hover:text-lime-500 border border-transparent hover:border-lime-500 float-end  p-1 px-3" id=""> <span class="bi bi-eye"></span> VIEW </button>
+                <p class="description py-3 pb-10"> ${data.description} </p>
+                <button data-url='${data.url}' class="more_btn absolute bottom-3 right-3 inline-block bg-gray-500 hover:bg-transparent text-gray-900 hover:text-lime-500 border border-transparent hover:border-lime-500 float-end  p-1 px-3" id=""> <span class="bi bi-eye"></span> VIEW </button>
             </div>
         `
     }
@@ -65,19 +65,19 @@ $(document).ready(function () {
     
     [
         {
-            name: 'PROJECT NAME',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, illo sapiente. Consequuntur dignissimos veritatis provident ratione molestiae similique quae adipisci!',
+            name: 'Assistant (CLI Application)',
+            description: `A Python-based command-line assistant that can speak and fetch system information. Currently under development in collaboration with Mayank.`,
             url: '#'
         },
         {
-            name: 'PROJECT NAME',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, illo sapiente. Consequuntur dignissimos veritatis provident ratione molestiae similique quae adipisci!',
-            url: '#'
+            name: 'Chat Room Application',
+            description: `A Python CLI socket-based server–client chat system with multiple chat rooms. Users can join rooms, send messages in real time, and interact with others.`,
+            url: 'https://alishabeg.github.io/room'
         },
         {
-            name: 'PROJECT NAME',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, illo sapiente. Consequuntur dignissimos veritatis provident ratione molestiae similique quae adipisci!',
-            url: '#'
+            name: 'Login System',
+            description: `A PHP-based authentication system with secure database integration. Supports user registration, login, and forget password functionality.`,
+            url: 'https://alishabeg.github.io/login'
         }
     ].forEach((element) => {
 
