@@ -73,12 +73,12 @@ $(document).ready(function () {
         {
             name: 'Assistant (CLI Application)',
             description: `A Python-based command-line assistant that can speak and fetch system information. Currently under development in collaboration with Mayank.`,
-            url: '#'
+            url: 'https://github.com/AlishaBeg/Assistant'
         },
         {
             name: 'Chat Room Application',
             description: `A Python CLI socket-based server–client chat system with multiple chat rooms. Users can join rooms, send messages in real time, and interact with others.`,
-            url: 'https://alishabeg.github.io/room'
+            url: 'https://github.com/AlishaBeg/room'
         },
         {
             name: 'Login System',
