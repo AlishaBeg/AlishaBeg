@@ -71,9 +71,9 @@ $(document).ready(function () {
     
     [
         {
-            name: 'Assistant (CLI Application)',
-            description: `A Python-based command-line assistant that can speak and fetch system information. Currently under development in collaboration with Mayank.`,
-            url: 'https://github.com/AlishaBeg/Assistant'
+            name: 'Pustakalaya (CLI Application)',
+            description: `"A simple Library Management System built in Python. It helps manage books, members, and borrowing records with JSON storage."`,
+            url: 'https://github.com/AlishaBeg/pustakalaya'
         },
         {
             name: 'Chat Room Application',
@@ -138,5 +138,6 @@ $(document).ready(async function () {
 
     // optional: show it immediately in console
     console.table(information);
+
 
 });
